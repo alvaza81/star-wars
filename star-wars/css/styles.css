@@ -1,0 +1,94 @@
+:root {
+  --theme-acent: #ffc700;
+  --theme-main: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+header {
+  padding: 32px 0 72px 0;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/space.jpg);
+}
+
+.about-profession {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  color: var(--theme-main);
+}
+
+.about-name {
+  color: var(--theme-acent);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 24px;
+}
+
+.about-positions {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: var(--theme-acent);
+  list-style: disc;
+  margin-left: 18px;
+}
+
+.about-positions-text {
+  color: var(--theme-main);
+}
+
+.about-button {
+  border: 0;
+  outline: 0;
+  margin-top: 40px;
+  padding: 16px 32px 16px 32px;
+  background: var(--theme-acent);
+  border-radius: 38px;
+  cursor: pointer;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
