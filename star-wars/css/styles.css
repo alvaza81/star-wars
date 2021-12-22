@@ -1,6 +1,7 @@
 :root {
   --theme-acent: #ffc700;
   --theme-main: #ffffff;
+  --theme-bgd: #222527;
 }
 
 html,
@@ -21,16 +22,44 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
 }
 
 header {
   padding: 32px 0 72px 0;
 }
 
+.about-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 36%;
+}
+
+.social-link {
+  margin-bottom: 26px;
+}
+
+.social-link {
+  fill: var(--theme-acent);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .about {
   height: 100%;
   width: 100%;
   background-image: url(../img/space.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
 }
 
 .about-profession {
@@ -91,4 +120,58 @@ header {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 60px;
+}
+
+.dart-vader-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.death-star-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  bottom: -96px;
+  opacity: 0.4;
+}
+
+.achivements {
+  padding: 60px 0;
+  background-color: var(--theme-bgd);
+}
+
+.achivements-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-acent);
+  margin-bottom: 64px;
+}
+
+.achivements-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.achivements-item-header {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-acent);
+  margin: 38px 0 4px 0;
+}
+
+.achivements-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+}
+
+.achivements-item {
+  width: 25%;
 }
